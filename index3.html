@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questao 4</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        let calculadora = parseInt(prompt("Digite o numero 1 para fazer operação de soma.\n2 para subtração.\n3 para multiplicação.\n4 para divisão."));
+        switch(calculadora){
+            case 1:
+                let s1 = parseFloat(prompt("Digite o primeiro numero: "));
+                let s2 = parseFloat(prompt("Digite o segundo numero: "));
+                let soma = s1 + s2
+                alert ("O resultado da soma é "+ soma);
+            break;
+            case 2: 
+                let sub1 = parseFloat(prompt("Digite o primeiro numero: "));
+                let sub2 = parseFloat(prompt("Digite o segundo numero: "));
+                let subtracao = sub1 - sub2
+                alert ("O resultado da subtração é "+ subtracao);
+            break;
+            case 3: 
+                let m1 = parseFloat(prompt("Digite o primeiro numero: "));
+                let m2 = parseFloat(prompt("Digite o segundo numero: "));
+                let mult = m1 * m2
+                alert ("O resultado da multiplicação é "+ mult);
+            break;
+            case 4: 
+                let d1 = parseFloat(prompt("Digite o primeiro numero: "));
+                let d2 = parseFloat(prompt("Digite o segundo numero: "));
+                let div = d1/d2;
+                alert ("O resultado da divisão é: "+ div);
+            break;
+            default:
+                alert ("Numero invalido");
+        }
+    </script>
+</body>
+</html>
